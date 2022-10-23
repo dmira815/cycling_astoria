@@ -5,14 +5,8 @@
   <head>
     <title>Cycling around Astoria Park</title>
     <style>
-      body {
-        background-image: url("bike.jpg");
-        background-size:contain;
-        background-repeat: repeat;
-      
-      
-      }
-
+    
+   
       h1,
       h2,
       p {
@@ -33,25 +27,22 @@
         margin: 20px auto;
       
       }
-      .nightMode {
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-        background-color: rgba(40, 72, 214, 0.377);
-        font-size: 14px;
-        padding: 20px;
-        border-radius: 30px;
-        font-family: Purisa;
-      }
+     
       button {
         border-radius: 20px;
         padding: 20px;
-        background-color: slateblue;
+        background-color:slateblue;
         font-size: 12px;
         margin-top: 25px;
         margin-bottom: 25px;
         border: 30px;
+        color: aqua;
       
+      }
+      button:hover{
+        background-color:lightsalmon;
+        cursor: pointer;
+        color: blue;
       }
       .bike {
         border-radius: 10px;
@@ -71,7 +62,7 @@
       }
       .how_you_doing {
         border-radius: 25px;
-        max-width: 90%;
+        max-width:100% ;
       }
       .how_you_doing:hover {
         transform: scale(1.2);
@@ -104,9 +95,8 @@
       }
       .sunset:hover,
       .nightvibes:hover,
-      .la_noche:hover,
       .entrance:hover {
-        transform: scale(2);
+        transform: scale(4);
       }
       .hellgateinfo {
         color: blueviolet;
@@ -118,7 +108,7 @@
         
       }
       .cycling {
-        color: lightgray;
+        color: gainsboro;
         text-align: center;
         font-size: 16px;
         font-weight: 1000px;
@@ -126,6 +116,7 @@
         font-family: Purisa;
         
       }
+      
       .footer {
         margin-top: 20px;
         font-family: Purisa;
@@ -138,43 +129,93 @@
       }
       .grid2{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns:repeat(3,1fr);
         grid-gap:15px;
-        
+        margin-bottom: 20px;
+        margin-top: 15px;
+       
+      }
+      .nightMode{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 14px;
+        padding: 20px;
+        border-radius: 30px;
+        font-family: Purisa;
+        background-image:url(
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/706/original/lanoche.jpg?1666431588) ;
+        background-size:50%; 
+        background-color: rgb(29, 190, 150);
+        background-repeat: repeat;
+      }
+
+      .nightMode button{
+        background-color: rgb(106, 7, 78);
+       
+      }
+  
+     
+      .dayMode{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 14px;
+        padding: 20px;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/707/original/bike.jpg?1666431632);
+        background-size:contain;
+        background-repeat: repeat;
 
       }
+      
+      .nightMode .container{
+        background: plum;
+      }
+     .change_theme{
+      color: lightblue;
+      background-color:slateblue;
+      font-size: 14px;
+      font-family: Purisa;
+
+     }
+
+
+
     </style>
   </head>
-  <button class="nightMode">change theme</button>
-  <body>
+  
+  <body class="dayMode">
+    
+    <button class="change_theme">change theme</button>
     <div class="container">
       <h1>I love cycling!🚴‍♀️</h1>
       <a href="https://www.nycgovparks.org/parks/astoria-park" target="_blank">
         <h2>Especially in Astoria Park🚲🌳</h2></a
       >
-      <img class="how_you_doing" src="howyoudoin'.jpg" />
+      <img class="how_you_doing" src='
+      https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/606/original/howyoudoin.jpg?1666382391' />
       <div class="grid1">
-        <!-- <img class="bike" src="bike.jpg" /> -->
+       
   
-        <img class="picnic" src="picnic.jpg" />
-        <img class="jack" src="jackjack.JPG" />
-        <img class="squirrel" src="lilsquirrel.JPG" />
+        <img class="picnic" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/703/original/picnic.jpg?1666431443" />
+        <img class="jack" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/701/original/jackjack.JPG?1666431377" />
+        <img class="squirrel" src="
+        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/702/original/lilsquirrel.JPG?1666431409" />
       </div>
       <a href="https://gothamist.com/news/the-strange-history-of-nycs-mighty-hell-gate" target="_blank">
-        <img class="hellgate" src="hellgate.jpg" />
+        <img class="hellgate" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/700/original/hellgate.jpg?1666431325" />
       </a>
      
       <p>
         I love biking, especially in Astoria Park!! Cycling/biking is a great
         way to get to where you want to go, while lowering one's carbon
         footprint. Biking is a much more sustainable type of transportation than
-        other methods because of the lack of harmful emissions in the atmosphere
-        that in turn will not contribute to climate change. Cycling keeps our
+        other methods because of the lack of harmful emissions in the atmosphere and the positive contribution to climate change. Cycling keeps our
         hearts pumping and is a good form of cardio exercise. Biking is also
         typically known as a way to reduce stress, which helps us with our
-        mental well being, although, some people feel anxiety when cycling in
-        the street since most times there is some traffic and not all streets
-        have bike lanes. Astoria Park, located in Astoria, Queens, NYC, has
+        mental well being. While some people feel anxiety when cycling in
+        the streets due to some traffic and not all streets
+        having bike lanes, overall, biking is a way to release stress and tension for most people who envelop this lifestyle. Astoria Park, located in Astoria, Queens, NYC, has
         designated bike lanes making it ideal for people who want to ride worry
         free! Cycling is a way to clear one's mind and get some exercise, along
         with enjoying the views along the way. Cycle alone or bring along a
@@ -184,11 +225,13 @@
       </p>
 
       <div class="grid2">
-      <img class="sunset" src="sunset.jpg" />
+      <img class="sunset" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/607/original/sunset.jpg?1666382469
+      " />
 
-      <img class="entrance" src="entrance.jpg" />
-      <img class="la_noche" src="lanoche.jpg" />
-      <img class="nightvibes" src="nightvibes.jpg" />
+      <img class="entrance" src="
+      https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/704/original/entrance.jpg?1666431501" />
+   
+      <img class="nightvibes" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/705/original/nightvibes.jpg?1666431534" />
     </div>
     <br>
       
@@ -210,7 +253,28 @@
   >
    <strong> Hellgate info</strong></a>
       <footer class="footer">Coded by Diana Miranda</footer>
+      </div>
+  </div>
     </div>
-  
+
+    <script>
+    
+      function changetheme(){
+        console.log("buttonclicked");
+        let body=document.querySelector("body");
+        if(body.classList.contains("nightMode")){
+          body.classList.remove("nightMode");
+          body.classList.add("dayMode");
+        }
+        else if(body.classList.contains("dayMode")){
+          body.classList.add("nightMode");
+         body.classList.remove("dayMode");
+        }
+        
+      }
+   let diffTheme = document.querySelector(".change_theme");
+   diffTheme.addEventListener('click',changetheme);
+   
+    </script>
   </body>
 </html>
